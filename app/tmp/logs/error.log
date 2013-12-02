@@ -1,0 +1,10 @@
+2013-12-02 15:20:00 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in [/var/www/abp/app/Controller/AppController.php, line 35]
+2013-12-02 15:20:00 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting T_FUNCTION
+Request URL: /
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/abp/ap...', 35)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/abp/ap...', 35, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/abp/ap...', 35, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
