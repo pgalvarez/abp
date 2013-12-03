@@ -8,3 +8,477 @@ Stack Trace:
 #3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-12-02 16:53:05 Error: Fatal Error (4): syntax error, unexpected ';', expecting T_FUNCTION in [/var/www/abp/app/Controller/RecursosController.php, line 13]
+2013-12-02 16:53:05 Error: [FatalErrorException] syntax error, unexpected ';', expecting T_FUNCTION
+Request URL: /Recursos/add
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/abp/ap...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/abp/ap...', 13, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/abp/ap...', 13, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-02 17:06:53 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [/var/www/abp/app/Controller/RecursosController.php, line 7]
+2013-12-02 17:06:53 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /Recursos/add
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/abp/ap...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/abp/ap...', 7, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/abp/ap...', 7, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-02 18:11:59 Error: [MissingActionException] Action RecursosController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecursosController',
+  'action' => 'index',
+)
+Request URL: /Recursos
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(RecursosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-02 18:29:56 Error: Fatal Error (1): Call to undefined function set() in [/var/www/abp/app/Controller/RecursosController.php, line 4]
+2013-12-02 18:29:56 Error: [FatalErrorException] Call to undefined function set()
+Request URL: /Recursos
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/abp/ap...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/abp/ap...', 4, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/abp/ap...', 4, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-02 18:30:18 Error: Fatal Error (4): syntax error, unexpected T_STRING in [/var/www/abp/app/View/Recursos/index.ctp, line 7]
+2013-12-02 18:30:18 Error: [FatalErrorException] syntax error, unexpected T_STRING
+Request URL: /Recursos
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/abp/ap...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/abp/ap...', 7, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/abp/ap...', 7, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-02 18:37:47 Error: [MissingActionException] Action RecursosController::aa() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecursosController',
+  'action' => 'aa',
+)
+Request URL: /Recursos/aa
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(RecursosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-02 18:42:20 Error: [MissingControllerException] Controller class RecursoController could not be found.
+Exception Attributes: array (
+  'class' => 'RecursoController',
+  'plugin' => NULL,
+)
+Request URL: /Recurso/add
+Stack Trace:
+#0 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-02 18:49:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/Recurso.css
+Stack Trace:
+#0 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-02 18:49:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/Recurso.css
+Stack Trace:
+#0 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-02 18:49:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/Recurso.css
+Stack Trace:
+#0 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-02 19:32:06 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [/var/www/abp/app/Controller/RecursosController.php, line 22]
+2013-12-02 19:32:06 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /Recursos/delete?Recurso_checkRecurso%5B0%5D=6
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/abp/ap...', 22)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/abp/ap...', 22, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/abp/ap...', 22, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-02 19:32:23 Error: [MissingViewException] View file "/var/www/abp/app/View/Recursos/delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/abp/app/View/Recursos/delete.ctp',
+)
+Request URL: /Recursos/delete?Recurso_checkRecurso%5B0%5D=6
+Stack Trace:
+#0 /var/www/abp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/abp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/abp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(RecursosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-02 19:42:10 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [/var/www/abp/app/Controller/RecursosController.php, line 23]
+2013-12-02 19:42:10 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /Recursos/delete?checkRecurso%5B0%5D=6
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/abp/ap...', 23)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/abp/ap...', 23, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/abp/ap...', 23, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-02 19:43:33 Error: Fatal Error (4): syntax error, unexpected T_ELSE in [/var/www/abp/app/Controller/RecursosController.php, line 24]
+2013-12-02 19:43:33 Error: [FatalErrorException] syntax error, unexpected T_ELSE
+Request URL: /Recursos/delete?checkRecurso%5B0%5D=6
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/abp/ap...', 24)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/abp/ap...', 24, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/abp/ap...', 24, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-02 19:43:53 Error: [MissingViewException] View file "/var/www/abp/app/View/Recursos/delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/abp/app/View/Recursos/delete.ctp',
+)
+Request URL: /Recursos/delete?checkRecurso%5B0%5D=6
+Stack Trace:
+#0 /var/www/abp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/abp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/abp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(RecursosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-02 19:51:18 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/var/www/abp/app/Controller/RecursosController.php, line 19]
+2013-12-02 19:51:18 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /Recursos
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/abp/ap...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/abp/ap...', 19, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/abp/ap...', 19, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-02 20:37:00 Error: [NotFoundException] Recurso inválido
+Request URL: /Recursos/edit?checkRecurso%5B0%5D=20
+Stack Trace:
+#0 [internal function]: RecursosController->edit()
+#1 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(RecursosController), Array)
+#2 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(RecursosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-02 20:37:38 Error: [NotFoundException] Recurso inválido
+Request URL: /Recursos/edit?checkRecurso%5B0%5D=20
+Stack Trace:
+#0 [internal function]: RecursosController->edit()
+#1 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(RecursosController), Array)
+#2 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(RecursosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-02 20:37:41 Error: [NotFoundException] Recurso inválido
+Request URL: /Recursos/edit?checkRecurso%5B0%5D=20
+Stack Trace:
+#0 [internal function]: RecursosController->edit()
+#1 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(RecursosController), Array)
+#2 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(RecursosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-02 20:37:54 Error: [NotFoundException] Recurso inválido
+Request URL: /Recursos/edit?checkRecurso%5B0%5D=20
+Stack Trace:
+#0 [internal function]: RecursosController->edit()
+#1 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(RecursosController), Array)
+#2 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(RecursosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-02 20:40:31 Error: Fatal Error (4): syntax error, unexpected T_STRING, expecting ')' in [/var/www/abp/app/Controller/RecursosController.php, line 35]
+2013-12-02 20:40:31 Error: [FatalErrorException] syntax error, unexpected T_STRING, expecting ')'
+Request URL: /Recursos/edit/20
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/abp/ap...', 35)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/abp/ap...', 35, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/abp/ap...', 35, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-02 20:40:36 Error: Fatal Error (4): syntax error, unexpected T_STRING, expecting ')' in [/var/www/abp/app/Controller/RecursosController.php, line 35]
+2013-12-02 20:40:36 Error: [FatalErrorException] syntax error, unexpected T_STRING, expecting ')'
+Request URL: /Recursos/edit/6
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/abp/ap...', 35)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/abp/ap...', 35, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/abp/ap...', 35, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-02 20:40:39 Error: Fatal Error (4): syntax error, unexpected T_STRING, expecting ')' in [/var/www/abp/app/Controller/RecursosController.php, line 35]
+2013-12-02 20:40:39 Error: [FatalErrorException] syntax error, unexpected T_STRING, expecting ')'
+Request URL: /Recursos/edit/
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/abp/ap...', 35)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/abp/ap...', 35, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/abp/ap...', 35, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-02 20:40:57 Error: [NotFoundException] Recurso inválido
+Request URL: /Recursos/edit/
+Stack Trace:
+#0 [internal function]: RecursosController->edit()
+#1 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(RecursosController), Array)
+#2 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(RecursosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-02 20:41:04 Error: [NotFoundException] Recurso inválido
+Request URL: /Recursos/edit/9
+Stack Trace:
+#0 [internal function]: RecursosController->edit('9')
+#1 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(RecursosController), Array)
+#2 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(RecursosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-02 20:41:10 Error: [NotFoundException] Recurso inválido
+Request URL: /Recursos/edit/
+Stack Trace:
+#0 [internal function]: RecursosController->edit()
+#1 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(RecursosController), Array)
+#2 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(RecursosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-02 21:48:22 Error: [NotFoundException] Recurso inválido
+Request URL: /Recursos/delete?checkRecurso%5B0%5D=20
+Stack Trace:
+#0 [internal function]: RecursosController->delete()
+#1 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(RecursosController), Array)
+#2 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(RecursosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-02 21:48:40 Error: [NotFoundException] Recurso inválido
+Request URL: /Recursos/delete
+Stack Trace:
+#0 [internal function]: RecursosController->delete()
+#1 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(RecursosController), Array)
+#2 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(RecursosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-03 11:15:22 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /Users/login
+Stack Trace:
+#0 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-03 11:15:59 Error: Fatal Error (64): Cannot redeclare class Recurso in [/var/www/abp/app/Model/User.php, line 4]
+2013-12-03 11:15:59 Error: [FatalErrorException] Cannot redeclare class Recurso
+Request URL: /Users/login
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/abp/ap...', 4)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/abp/ap...', 4, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/abp/ap...', 4, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-03 11:16:24 Error: Fatal Error (1): Call to a member function login() on a non-object in [/var/www/abp/app/Controller/UsersController.php, line 6]
+2013-12-03 11:16:24 Error: [FatalErrorException] Call to a member function login() on a non-object
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/abp/ap...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/abp/ap...', 6, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/abp/ap...', 6, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-03 12:59:38 Error: [MissingViewException] View file "/var/www/abp/app/View/Groups/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/abp/app/View/Groups/add.ctp',
+)
+Request URL: /Groups/add
+Stack Trace:
+#0 /var/www/abp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/abp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/abp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-03 13:00:33 Error: [MissingViewException] View file "/var/www/abp/app/View/Groups/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/abp/app/View/Groups/add.ctp',
+)
+Request URL: /Groups/add
+Stack Trace:
+#0 /var/www/abp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/abp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/abp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-03 13:01:13 Error: [MissingActionException] Action GroupsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'GroupsController',
+  'action' => 'index',
+)
+Request URL: /Groups
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-03 13:04:57 Error: [MissingActionException] Action GroupsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'GroupsController',
+  'action' => 'index',
+)
+Request URL: /Groups
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-03 13:05:10 Error: [MissingActionException] Action GroupsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'GroupsController',
+  'action' => 'index',
+)
+Request URL: /Groups
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-03 13:06:06 Error: [MissingActionException] Action GroupsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'GroupsController',
+  'action' => 'index',
+)
+Request URL: /Groups
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-03 13:10:45 Error: [MissingActionException] Action GroupsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'GroupsController',
+  'action' => 'index',
+)
+Request URL: /Groups
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-03 15:08:42 Error: [MissingActionException] Action GroupsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'GroupsController',
+  'action' => 'index',
+)
+Request URL: /Groups
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-03 15:10:33 Error: [MissingActionException] Action GroupsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'GroupsController',
+  'action' => 'index',
+)
+Request URL: /Groups
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-03 16:00:50 Error: Fatal Error (4): syntax error, unexpected T_RETURN in [/var/www/abp/app/Controller/GroupsController.php, line 21]
+2013-12-03 16:00:50 Error: [FatalErrorException] syntax error, unexpected T_RETURN
+Request URL: /Groups/add
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/abp/ap...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/abp/ap...', 21, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/abp/ap...', 21, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-03 16:11:39 Error: Fatal Error (1): Class 'SimplePasswordHasher' not found in [/var/www/abp/app/Model/User.php, line 7]
+2013-12-03 16:11:39 Error: [FatalErrorException] Class 'SimplePasswordHasher' not found
+Request URL: /Users/add
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'SimplePa...', '/var/www/abp/ap...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'SimplePa...', '/var/www/abp/ap...', 7, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'SimplePa...', '/var/www/abp/ap...', 7, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-03 16:13:05 Error: Fatal Error (1): Class 'SimplePasswordHasher' not found in [/var/www/abp/app/Model/User.php, line 7]
+2013-12-03 16:13:05 Error: [FatalErrorException] Class 'SimplePasswordHasher' not found
+Request URL: /Users/add
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'SimplePa...', '/var/www/abp/ap...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'SimplePa...', '/var/www/abp/ap...', 7, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'SimplePa...', '/var/www/abp/ap...', 7, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-03 16:13:52 Error: Fatal Error (1): Class 'SimplePasswordHasher' not found in [/var/www/abp/app/Model/User.php, line 7]
+2013-12-03 16:13:52 Error: [FatalErrorException] Class 'SimplePasswordHasher' not found
+Request URL: /Users/add
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'SimplePa...', '/var/www/abp/ap...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'SimplePa...', '/var/www/abp/ap...', 7, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'SimplePa...', '/var/www/abp/ap...', 7, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-03 16:14:03 Error: Fatal Error (1): Class 'SimplePasswordHasher' not found in [/var/www/abp/app/Model/User.php, line 8]
+2013-12-03 16:14:03 Error: [FatalErrorException] Class 'SimplePasswordHasher' not found
+Request URL: /Users/add
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'SimplePa...', '/var/www/abp/ap...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'SimplePa...', '/var/www/abp/ap...', 8, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'SimplePa...', '/var/www/abp/ap...', 8, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-03 16:15:48 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /Users
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-03 16:23:18 Error: Fatal Error (4): syntax error, unexpected T_RETURN in [/var/www/abp/app/Model/Group.php, line 7]
+2013-12-03 16:23:18 Error: [FatalErrorException] syntax error, unexpected T_RETURN
+Request URL: /Groups/add
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/abp/ap...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/abp/ap...', 7, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/abp/ap...', 7, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
