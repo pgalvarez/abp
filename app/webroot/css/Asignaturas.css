@@ -1,0 +1,22 @@
+#selectResp{
+	background: white;
+  border-radius: inherit;
+  border: 1px solid rgba(0,0,0,0.17);
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+	cursor:pointer;
+}
+
+#nameResp{
+float:right;
+}
+#responsableAsig table td{
+	vertical-align:center;
+	cursor:pointer;
+}
+#responsableAsig table td:hover{
+	background-color:#76BF6B;
+}
+
+#responsableAsig table td *{
+	margin-left:5px;
+}
