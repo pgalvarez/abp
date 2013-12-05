@@ -36,3 +36,19 @@ CREATE TABLE matriculas (
     users_id INT(11) NOT NULL,
 		matriculado TINYINT,
 );
+
+DROP TABLE IF EXISTS calendarios;
+CREATE TABLE calendarios (
+    id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	idGrupo INT(11) NOT NULL,
+    horario DATETIME
+);
+
+DROP TABLE IF EXISTS asistencias;
+CREATE TABLE asistencias (
+    id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	idUsuario INT(11) NOT NULL,
+	idGrupo INT(11) NOT NULL
+);
+
+

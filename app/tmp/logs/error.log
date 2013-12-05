@@ -4041,3 +4041,31 @@ Stack Trace:
 #1 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest), Object(CakeResponse))
 #2 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2013-12-05 22:30:30 Error: [MissingControllerException] Controller class GruposController could not be found.
+Exception Attributes: array (
+  'class' => 'GruposController',
+  'plugin' => NULL,
+)
+Request URL: /abp/Grupos/add
+Stack Trace:
+#0 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-05 22:32:35 Error: [MissingTableException] Table matriculas for model Matricula was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'matriculas',
+  'class' => 'Matricula',
+  'ds' => 'default',
+)
+Request URL: /abp/Asignaturas/add
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Model/Model.php(3310): Model->setSource('matriculas')
+#1 /var/www/abp/lib/Cake/Model/Datasource/DboSource.php(1063): Model->getDataSource()
+#2 /var/www/abp/lib/Cake/Model/Model.php(2750): DboSource->read(Object(User), Array)
+#3 /var/www/abp/lib/Cake/Model/Model.php(2722): Model->_readDataSource('all', Array)
+#4 /var/www/abp/app/Controller/AsignaturasController.php(21): Model->find('all', Array)
+#5 [internal function]: AsignaturasController->add()
+#6 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(AsignaturasController), Array)
+#7 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(AsignaturasController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
