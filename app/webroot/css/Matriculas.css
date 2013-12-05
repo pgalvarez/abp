@@ -1,0 +1,7 @@
+#tableMatriculas td:last-child{
+	text-align:center;
+}
+#tableMatriculas td:last-child input{
+	width:auto;
+
+}

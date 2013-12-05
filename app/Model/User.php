@@ -3,16 +3,61 @@ App::uses('AuthComponent', 'Controller/Component');
 
 class User extends AppModel{
 
-	public $belongsTo = array('Group');
 	public $actsAs = array('Acl' => array('type' => 'requester'));
+	public $virtualFields = array(    
+    'name' => 'CONCAT(User.first_name, " ", User.second_name)'
+	);
+	public $hasMany = array(
+		'Matricula' => array(
+			'className' => 'Matricula',
+			'foreignKey' => 'users_id'		
+		)
+	);
+
+	public $validate = array(
+		'first_name' => array(
+			'alfanumerico' => array(
+				'rule' => '/[a-zA-Z]+/',
+				'required' => true,
+				'message' => 'Solo letras'	
+			)
+		),
+		'second_name' => array(
+			'alfanumerico' =>array(
+				'rule' => '/[a-zA-Z]+/',
+				'required' => true,
+				'message' => 'Solo letras '
+			)	
+		),
+		'dni' => array(
+			'dniRule' =>array(
+				'rule' => '/[0-9]{8}[a-zA-Z]/',
+				'required' => true,
+				'message' => 'Formato incorrecto'		
+			)
+		),
+		'username' => array(
+			'alfanumerico' =>array(
+				'rule' => '/[a-zA-Z]+/',
+				'required' => true,
+				'message' => 'Solo letras y números'		
+			)
+		),
+		'password' => array(
+			'alfanumerico' =>array(
+				'rule' => '/[a-zA-Z]+/',
+				'required' => true,
+				'message' => 'Solo letras y números'		
+			)
+		)
+	);
 
 	public function beforeSave() {
-        $this->data['User']['password'] = AuthComponent::password($this->data['User']['password']);
-        return true;
-    }
-	//Utilizada por ACL cada vez que se da de alta un nuevo usuario, encargada de crear una nueva entrada en la tabla ARO
+		$this->data['User']['password'] = AuthComponent::password($this->data['User']['password']);
+		return true;
+  }
+	//Encargada de crear entradas en ARO cuando se crea un usuario
   public function parentNode() {
-		die("dfjdks");
     if (!$this->id && empty($this->data)) {
         return null;
     }
@@ -27,6 +72,5 @@ class User extends AppModel{
         return array('Group' => array('id' => $groupId));
     }
 	}
-
 }
 ?>

@@ -1,4 +1,4 @@
-<?php
+f<?php
 class AsignaturasController extends AppController{
 	public $uses = array('User','Asignatura');
 
@@ -14,11 +14,12 @@ class AsignaturasController extends AppController{
 			$this->Session->setFlash('Error al guardar');
 		}else{
 			$result = $this->User->find('all', array(
-				'conditions' => array('Group.name =' => 'Profesor'),
 				'fields' => array('User.first_name','User.second_name','User.id'),
+				'conditions'=> array('User.group_id' => '4'),
 				'order' => array('User.second_name', 'User.first_name')
 				)
 			);
+			//Una vez obtenidos los datos, los ordenamos alfabéticamente para representarlos en la vista
 			$cols = 4; //Número de columnas 
 			$values = array();
 			$numrows = sizeof($result);
@@ -45,7 +46,7 @@ class AsignaturasController extends AppController{
 	function edit($id = null){
 	 if (!$id) {
         throw new NotFoundException(__('Codigo de asignatura inválido'));
-    }
+    }	
     $asignatura = $this->Asignatura->findById($id);
     if (!$asignatura) {
         throw new NotFoundException(__('Código de asignatura inválido'));
@@ -62,7 +63,7 @@ class AsignaturasController extends AppController{
         $this->request->data = $asignatura;
 
 				$result = $this->User->find('all', array(
-				'conditions' => array('Group.name =' => 'Profesor'),
+				'conditions' => array('User.group_id =' => '4'),
 				'fields' => array('User.first_name','User.second_name','User.id'),
 				'order' => array('User.second_name', 'User.first_name')
 				)
@@ -91,7 +92,7 @@ class AsignaturasController extends AppController{
     }	
 	}
 	function delete(){
-		$ids = $this->request->query[checkAsignatura];
+		$ids = $this->request->query['checkAsignatura'];
  		if (empty($ids)) {
         throw new NotFoundException(__('Codigo de asignatura no válido'));
     }else{
@@ -101,9 +102,12 @@ class AsignaturasController extends AppController{
 					$error = true;
 				}
 			}
-			$error?$this->Session->setFlash("Se han producido errores al eliminar"):	$this->Session->setFlash("Asignatura/s 				eliminada/s con éxito");
+			$error?$this->Session->setFlash("Se han producido errores al eliminar"):	$this->Session->setFlash("Asignatura/s eliminada/s con éxito");
 		}
 		return $this->redirect(array('controller' => 'Asignaturas', 'action' => 'index'));
+	}
+	function matricular(){
+		$this->set('asignaturas', $this->Asignatura->find('all'));
 	}
 }
 ?>

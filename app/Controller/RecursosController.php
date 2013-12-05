@@ -9,7 +9,7 @@ class RecursosController extends AppController{
 			if($this->Recurso->save($this->request->data)){
 				return $this->redirect(array('controller' => '', 'action' => 'index'));
 			}
-			#$this->Session->setFlash('Error al guardar');
+			$this->Session->setFlash('Error al guardar');
 		}	
 	}
 	function edit($id = null){
@@ -32,9 +32,10 @@ class RecursosController extends AppController{
         $this->request->data = $recurso;
     }	
 	}
-	function delete($id =	null){
- 		if (!$id) {
-        throw new NotFoundException(__('Recurso inválido'));
+	function delete(){
+		$ids = $this->request->query['checkRecurso'];
+ 		if (!$ids) {
+        throw new NotFoundException(__('El recurso solicitado no es valido'));
     }else{
 			$error = false;
 			foreach($ids as $id){

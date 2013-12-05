@@ -4,19 +4,11 @@ class Asignatura extends AppModel{
     'User' => array(
         'className' => 'User',
 				'foreignKey' => 'responsable_id',
-				'conditions' => array('Group.name' => 'Profesor'),
 				'fields' => array('User.first_name','User.second_name')
     )
   );
-#  public $hasAndBelongsToMany = array(
-#		'Alumnos' =>
-#			array(
-#				'className' => 'User',
-#				'joinTable' => 'asignaturas_users',
-#				'foreignKey' => 'asignatura_id',
-#				'associationForeignKey' => 'user_id'			
-#			)	
-#	);
+	 public $hasMany = array('Matricula' => array('className' => 'Matricula', 'foreignKey' => 'asignaturas_id'));
+
 	public $validate = array(
 		'name' => array(
 				'alfanumerico' => array(

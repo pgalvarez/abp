@@ -32,9 +32,15 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 
 		echo $this->Html->css('cake.generic');
 		echo $this->Html->css('Recursos');	//CSS pagina recursos
-
+		//Añadidos
+		echo $this->Html->css('Recursos');
+		echo $this->Html->css('Asignaturas');
+		echo $this->Html->css('Matriculas');
+	  echo $this->Html->script('Asignaturas');
+		//
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
+
 		echo $this->fetch('script');
 	?>
 </head>

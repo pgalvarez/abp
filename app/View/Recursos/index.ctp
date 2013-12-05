@@ -15,10 +15,10 @@
 							<td>'.$recurso['Recurso']['tipo'].'</td>
 							<td>
 								<a href="/Recursos/delete?checkRecurso[]='.$recurso['Recurso']['id'].'">
-									<img src=/img/deleteRecurso.png></img>
+									<img src=/img/deleteIcon.png></img>
 								</a>
 								<a href="/Recursos/edit/'.$recurso['Recurso']['id'].'">			
-									<img src="/img/editRecurso.png"></img>
+									<img src="/img/editIcon.png"></img>
 								</a>							
 							</td>
 						</tr>';

@@ -1,8 +1,8 @@
 <div>
 	<?php echo $this->Session->flash();?>
-	<a href="/Asignaturas/add">Nuevo</a>
-	<form  method="get" action="/Asignaturas/delete" >
-		<table>
+	<a href="/Asignaturas/add">Nueva</a>
+<form method ="get" action="/Asignaturas/delete?checkAsignatura[]">	
+	<table>
 		<tr>
 			<th></th><th>Nombre</th>	<th>Créditos</th> <th>Responsable</th> <th>Opciones</th>
 		</tr>

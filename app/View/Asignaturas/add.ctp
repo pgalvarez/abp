@@ -3,7 +3,6 @@ $this->Session->flash();
 echo $this->Form->create('Asignatura');
 echo $this->Form->input('name');
 echo $this->Form->input('creditos');
-echo $this->Form->input('curso_id');
 ?>
 <div id ="selectResp"><span>Responsable</span><span id ="nameResp"></span></div>
 <div id="responsableAsig">
