@@ -5,7 +5,6 @@ CREATE TABLE recursos (
     dni varchar (9),
     tipo enum('despacho','aula','laboratorio','salaReunion')
 );
-
 DROP TABLE IF EXISTS users;
 CREATE TABLE users (
     id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -21,4 +20,19 @@ CREATE TABLE groups (
     id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
     created DATETIME
+);
+DROP TABLE IF EXISTS asignaturas;
+CREATE TABLE asignaturas (
+    id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+		creditos INT(11),
+		responsable_id INT(11) NOT NULL,
+    created DATETIME
+);
+DROP TABLE IF EXISTS matriculas;
+CREATE TABLE matriculas (
+    id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+		asignaturas_id INT(11) NOT NULL,
+    users_id INT(11) NOT NULL,
+		matriculado TINYINT,
 );
