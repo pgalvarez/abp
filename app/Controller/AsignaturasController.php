@@ -9,6 +9,7 @@ class AsignaturasController extends AppController{
 		if($this->request->isPost()){
 			$this->Asignatura->create();
 			if($this->Asignatura->save($this->request->data)){
+				$this->Session->setFlash('Asignatura dada de alta con éxito');
 				return $this->redirect(array('controller' => '', 'action' => 'index'));
 			}
 			$this->Session->setFlash('Error al guardar');
