@@ -1,51 +1,103 @@
 <?php
-class CalendariosController extends AppController{
-	function index(){
-		$this->set("Calendario", $this->Calendario->find('all'));
+App::uses('AppController', 'Controller');
+/**
+ * Calendarios Controller
+ *
+ * @property Calendario $Calendario
+ * @property PaginatorComponent $Paginator
+ */
+class CalendariosController extends AppController {
+
+/**
+ * Components
+ *
+ * @var array
+ */
+	public $components = array('Paginator');
+
+/**
+ * index method
+ *
+ * @return void
+ */
+	public function index() {
+		$this->Calendario->recursive = 0;
+		$this->set('calendarios', $this->Paginator->paginate());
 	}
-	function add(){
-		if($this->request->isPost()){
-			$this->Calendario->create();
-			if($this->Calendario->save($this->request->data)){
-				return $this->redirect(array('controller' => '', 'action' => 'index'));
-			}
-			#$this->Session->setFlash('Error al guardar');
-		}	
-	}
-	function edit($id = null){
-	 if (!$id) {
-        throw new NotFoundException(__('Calendario inválido'));
-    }
-    $Calendario = $this->Calendario->findById($id);
-    if (!$Calendario) {
-        throw new NotFoundException(__('Calendario inválido'));
-    }
-    if ($this->request->is(array('post', 'put'))) {
-        $this->Calendario->id = $id;
-        if ($this->Calendario->save($this->request->data)) {
-            $this->Session->setFlash(__('Calendario actualizado.'));
-            return $this->redirect(array('action' => 'index'));
-        }
-        $this->Session->setFlash(__('Error en la actualización.'));
-    }
-    if (!$this->request->data) {
-        $this->request->data = $Calendario;
-    }	
-	}
-	function delete($id =	null){
- 		if (!$id) {
-        throw new NotFoundException(__('Calendario inválido'));
-    }else{
-			$error = false;
-			foreach($ids as $id){
-				if(	(!$this->Calendario->delete($id)) && (!$error) ){
-					$error = true;
-				}
-			}
-			$error?$this->Session->setFlash("Se han producido errores al eliminar"):	$this->Session->setFlash("Calendario 		
-			eliminados con éxito");
+
+/**
+ * view method
+ *
+ * @throws NotFoundException
+ * @param string $id
+ * @return void
+ */
+	public function view($id = null) {
+		if (!$this->Calendario->exists($id)) {
+			throw new NotFoundException(__('Invalid calendario'));
 		}
-		return $this->redirect(array('controller' => 'Calendario', 'action' => 'index'));
+		$options = array('conditions' => array('Calendario.' . $this->Calendario->primaryKey => $id));
+		$this->set('calendario', $this->Calendario->find('first', $options));
 	}
-}
-?>
+
+/**
+ * add method
+ *
+ * @return void
+ */
+	public function add() {
+		if ($this->request->is('post')) {
+			$this->Calendario->create();
+			if ($this->Calendario->save($this->request->data)) {
+				$this->Session->setFlash(__('The calendario has been saved.'));
+				return $this->redirect(array('action' => 'index'));
+			} else {
+				$this->Session->setFlash(__('The calendario could not be saved. Please, try again.'));
+			}
+		}
+	}
+
+/**
+ * edit method
+ *
+ * @throws NotFoundException
+ * @param string $id
+ * @return void
+ */
+	public function edit($id = null) {
+		if (!$this->Calendario->exists($id)) {
+			throw new NotFoundException(__('Invalid calendario'));
+		}
+		if ($this->request->is(array('post', 'put'))) {
+			if ($this->Calendario->save($this->request->data)) {
+				$this->Session->setFlash(__('The calendario has been saved.'));
+				return $this->redirect(array('action' => 'index'));
+			} else {
+				$this->Session->setFlash(__('The calendario could not be saved. Please, try again.'));
+			}
+		} else {
+			$options = array('conditions' => array('Calendario.' . $this->Calendario->primaryKey => $id));
+			$this->request->data = $this->Calendario->find('first', $options);
+		}
+	}
+
+/**
+ * delete method
+ *
+ * @throws NotFoundException
+ * @param string $id
+ * @return void
+ */
+	public function delete($id = null) {
+		$this->Calendario->id = $id;
+		if (!$this->Calendario->exists()) {
+			throw new NotFoundException(__('Invalid calendario'));
+		}
+		$this->request->onlyAllow('post', 'delete');
+		if ($this->Calendario->delete()) {
+			$this->Session->setFlash(__('The calendario has been deleted.'));
+		} else {
+			$this->Session->setFlash(__('The calendario could not be deleted. Please, try again.'));
+		}
+		return $this->redirect(array('action' => 'index'));
+	}}

@@ -4745,3 +4745,68 @@ Stack Trace:
 #3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-01-07 17:18:21 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.first_name' in 'field list'
+Request URL: /abp/users/login
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/abp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/abp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/abp/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/abp/lib/Cake/Model/Model.php(2750): DboSource->read(Object(User), Array)
+#5 /var/www/abp/lib/Cake/Model/Model.php(2722): Model->_readDataSource('first', Array)
+#6 /var/www/abp/lib/Cake/Controller/Component/Auth/BaseAuthenticate.php(114): Model->find('first', Array)
+#7 /var/www/abp/lib/Cake/Controller/Component/Auth/FormAuthenticate.php(81): BaseAuthenticate->_findUser('admin', 'admin')
+#8 /var/www/abp/lib/Cake/Controller/Component/AuthComponent.php(754): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/abp/lib/Cake/Controller/Component/AuthComponent.php(601): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/abp/app/Controller/UsersController.php(20): AuthComponent->login()
+#11 [internal function]: UsersController->login()
+#12 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#14 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-07 17:18:51 Error: [MissingActionException] Action CalendariosController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'CalendariosController',
+  'action' => 'login',
+)
+Request URL: /abp/calendarios/login
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CalendariosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-07 17:22:00 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin' for key 'username'
+Request URL: /abp/users/add
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/abp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `ab...', Array)
+#2 /var/www/abp/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `ab...')
+#3 /var/www/abp/lib/Cake/Model/Model.php(1761): DboSource->create(Object(User), Array, Array)
+#4 /var/www/abp/app/Controller/UsersController.php(7): Model->save(Array)
+#5 [internal function]: UsersController->add()
+#6 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-01-07 17:22:13 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.first_name' in 'field list'
+Request URL: /abp/users/login
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/abp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/abp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/abp/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/abp/lib/Cake/Model/Model.php(2750): DboSource->read(Object(User), Array)
+#5 /var/www/abp/lib/Cake/Model/Model.php(2722): Model->_readDataSource('first', Array)
+#6 /var/www/abp/lib/Cake/Controller/Component/Auth/BaseAuthenticate.php(114): Model->find('first', Array)
+#7 /var/www/abp/lib/Cake/Controller/Component/Auth/FormAuthenticate.php(81): BaseAuthenticate->_findUser('admin', 'admin')
+#8 /var/www/abp/lib/Cake/Controller/Component/AuthComponent.php(754): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/abp/lib/Cake/Controller/Component/AuthComponent.php(601): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/abp/app/Controller/UsersController.php(20): AuthComponent->login()
+#11 [internal function]: UsersController->login()
+#12 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#14 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
