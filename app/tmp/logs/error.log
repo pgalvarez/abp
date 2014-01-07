@@ -4069,3 +4069,679 @@ Stack Trace:
 #8 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(AsignaturasController), Object(CakeRequest), Object(CakeResponse))
 #9 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
+2013-12-12 13:08:38 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /Users
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-12 13:14:52 Error: [MissingControllerException] Controller class AbpController could not be found.
+Exception Attributes: array (
+  'class' => 'AbpController',
+  'plugin' => NULL,
+)
+Request URL: /abp
+Stack Trace:
+#0 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-13 12:57:52 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /Users
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-13 12:59:33 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /Users/
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-13 13:09:40 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /Users
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-13 13:09:42 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /Users
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-13 13:10:31 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /Users
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-13 13:12:49 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /Users
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-13 13:13:16 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /Users
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-13 13:15:49 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /Users
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-13 13:16:20 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /Users
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-06 14:26:34 Error: Fatal Error (1): Call to undefined function orderData() in [/var/www/abp/app/Controller/AsignaturasController.php, line 76]
+2014-01-06 14:26:34 Error: [FatalErrorException] Call to undefined function orderData()
+Request URL: /Asignaturas/edit/8
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/abp/ap...', 76)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/abp/ap...', 76, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/abp/ap...', 76, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-06 14:27:37 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/var/www/abp/app/Controller/AsignaturasController.php, line 78]
+2014-01-06 14:27:37 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /Asignaturas/edit/8
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/abp/ap...', 78)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/abp/ap...', 78, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/abp/ap...', 78, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-06 14:27:43 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/var/www/abp/app/Controller/AsignaturasController.php, line 78]
+2014-01-06 14:27:43 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /Asignaturas/edit/8
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/abp/ap...', 78)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/abp/ap...', 78, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/abp/ap...', 78, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-06 14:28:09 Error: Fatal Error (1): Call to undefined function orderData() in [/var/www/abp/app/Controller/AsignaturasController.php, line 76]
+2014-01-06 14:28:09 Error: [FatalErrorException] Call to undefined function orderData()
+Request URL: /Asignaturas/edit/8
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/abp/ap...', 76)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/abp/ap...', 76, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/abp/ap...', 76, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-06 14:28:10 Error: Fatal Error (1): Call to undefined function orderData() in [/var/www/abp/app/Controller/AsignaturasController.php, line 76]
+2014-01-06 14:28:10 Error: [FatalErrorException] Call to undefined function orderData()
+Request URL: /Asignaturas/edit/8
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/abp/ap...', 76)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/abp/ap...', 76, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/abp/ap...', 76, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-06 14:54:38 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'users_id' cannot be null
+Request URL: /Matriculas/solicitar_matricula?Accion=Matricular&Id=8
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/abp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `ab...', Array)
+#2 /var/www/abp/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `ab...')
+#3 /var/www/abp/lib/Cake/Model/Model.php(1761): DboSource->create(Object(Matricula), Array, Array)
+#4 /var/www/abp/app/Controller/MatriculasController.php(46): Model->save(Array)
+#5 [internal function]: MatriculasController->solicitar_matricula()
+#6 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#7 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-01-06 15:17:43 Error: [NotFoundException] Operación no válida
+Request URL: /Matriculas/solicitar_matricula?Accion=Desmatricular&Id=10
+Stack Trace:
+#0 [internal function]: MatriculasController->solicitar_matricula()
+#1 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#2 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-06 15:18:43 Error: [NotFoundException] Operación no válida
+Request URL: /Matriculas/solicitar_matricula?Accion=Desmatricular&Id=8
+Stack Trace:
+#0 [internal function]: MatriculasController->solicitar_matricula()
+#1 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#2 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-06 18:36:24 Error: Fatal Error (4): syntax error, unexpected '{' in [/var/www/abp/app/Controller/MatriculasController.php, line 100]
+2014-01-06 18:36:24 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /Matriculas/index_alumnos
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/abp/ap...', 100)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/abp/ap...', 100, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/abp/ap...', 100, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-06 18:39:32 Error: Fatal Error (4): syntax error, unexpected '{' in [/var/www/abp/app/Controller/MatriculasController.php, line 98]
+2014-01-06 18:39:32 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /Matriculas/index_alumnos
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/abp/ap...', 98)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/abp/ap...', 98, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/abp/ap...', 98, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-06 18:41:54 Error: [NotFoundException] Asignatura no válida
+Request URL: /Matriculas/solicitar_matricula?Accion=Matricular&Id=8
+Stack Trace:
+#0 [internal function]: MatriculasController->solicitar_matricula()
+#1 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#2 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-06 18:43:14 Error: [NotFoundException] Asignatura no válida
+Request URL: /Matriculas/solicitar_matricula?Accion=Matricular&Id=8
+Stack Trace:
+#0 [internal function]: MatriculasController->solicitar_matricula()
+#1 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#2 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-06 18:43:19 Error: [NotFoundException] Asignatura no válida
+Request URL: /Matriculas/solicitar_matricula?Accion=Matricular&Id=8
+Stack Trace:
+#0 [internal function]: MatriculasController->solicitar_matricula()
+#1 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#2 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-06 18:44:23 Error: [NotFoundException] Asignatura no válida
+Request URL: /Matriculas/solicitar_matricula?Accion=Matricular&Id=8
+Stack Trace:
+#0 [internal function]: MatriculasController->solicitar_matricula()
+#1 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#2 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-06 18:44:31 Error: [NotFoundException] Asignatura no válida
+Request URL: /Matriculas/solicitar_matricula?Accion=Matricular&Id=8
+Stack Trace:
+#0 [internal function]: MatriculasController->solicitar_matricula()
+#1 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#2 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-06 18:55:39 Error: Fatal Error (4): syntax error, unexpected T_ELSE in [/var/www/abp/app/View/Matriculas/index_alumnos.ctp, line 32]
+2014-01-06 18:55:39 Error: [FatalErrorException] syntax error, unexpected T_ELSE
+Request URL: /Matriculas/index_alumnos
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/abp/ap...', 32)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/abp/ap...', 32, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/abp/ap...', 32, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-06 19:11:45 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /Users
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-06 19:12:32 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /Users
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-06 19:18:11 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ',' or ';' in [/var/www/abp/app/View/Matriculas/index_secretaria.ctp, line 20]
+2014-01-06 19:18:11 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ',' or ';'
+Request URL: /Matriculas/index_secretaria
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/abp/ap...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/abp/ap...', 20, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/abp/ap...', 20, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-06 19:18:37 Error: [MissingActionException] Action MatriculasController::matricular_alumnos() could not be found.
+Exception Attributes: array (
+  'controller' => 'MatriculasController',
+  'action' => 'matricular_alumnos',
+)
+Request URL: /Matriculas/matricular_alumnos?Id=29
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-06 19:18:41 Error: [NotFoundException] Petición no válida
+Request URL: /Matriculas/denegar_matricula?User_id=29&Asignatura_id=8
+Stack Trace:
+#0 /var/www/abp/app/Controller/MatriculasController.php(95): MatriculasController->desmatricularAlumno('8', '29')
+#1 [internal function]: MatriculasController->denegar_matricula()
+#2 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-01-06 19:19:47 Error: [NotFoundException] Petición no válida
+Request URL: /Matriculas/denegar_matricula?User_id=29&Asignatura_id=8
+Stack Trace:
+#0 /var/www/abp/app/Controller/MatriculasController.php(95): MatriculasController->desmatricularAlumno('8', '29')
+#1 [internal function]: MatriculasController->denegar_matricula()
+#2 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-01-06 19:19:55 Error: [NotFoundException] Petición no válida
+Request URL: /Matriculas/denegar_matricula
+Stack Trace:
+#0 [internal function]: MatriculasController->denegar_matricula()
+#1 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#2 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-06 19:20:40 Error: [NotFoundException] Asignatura no válida
+Request URL: /Matriculas/solicitar_matricula
+Stack Trace:
+#0 [internal function]: MatriculasController->solicitar_matricula()
+#1 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#2 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-06 19:21:51 Error: [NotFoundException] Petición no válida
+Request URL: /Matriculas/denegar_matricula?User_id=29&Asignatura_id=8
+Stack Trace:
+#0 /var/www/abp/app/Controller/MatriculasController.php(95): MatriculasController->desmatricularAlumno('8', '29')
+#1 [internal function]: MatriculasController->denegar_matricula()
+#2 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-01-06 19:22:02 Error: [NotFoundException] Petición no válida
+Request URL: /Matriculas/denegar_matricula
+Stack Trace:
+#0 [internal function]: MatriculasController->denegar_matricula()
+#1 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#2 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-06 19:22:53 Error: [NotFoundException] Petición no válida
+Request URL: /Matriculas/denegar
+Stack Trace:
+#0 [internal function]: MatriculasController->denegar()
+#1 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#2 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-06 19:23:21 Error: [MissingActionException] Action MatriculasController::denegar() could not be found.
+Exception Attributes: array (
+  'controller' => 'MatriculasController',
+  'action' => 'denegar',
+)
+Request URL: /Matriculas/denegar
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-06 19:23:26 Error: [NotFoundException] Petición no válida
+Request URL: /Matriculas/denegar_matricula
+Stack Trace:
+#0 /var/www/abp/app/Controller/MatriculasController.php(95): MatriculasController->desmatricularAlumno(NULL, NULL)
+#1 [internal function]: MatriculasController->denegar_matricula()
+#2 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-01-06 19:23:40 Error: [NotFoundException] Petición no válida
+Request URL: /Matriculas/denegar_matricula?User_id=29&Asignatura_id=8
+Stack Trace:
+#0 [internal function]: MatriculasController->denegar_matricula()
+#1 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#2 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-06 19:24:23 Error: [NotFoundException] Petición no válida
+Request URL: /Matriculas/denegar_matricula?User_id=29&Asignatura_id=8
+Stack Trace:
+#0 [internal function]: MatriculasController->denegar_matricula()
+#1 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#2 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-06 19:24:25 Error: [NotFoundException] Petición no válida
+Request URL: /Matriculas/denegar_matricula?User_id=29&Asignatura_id=8
+Stack Trace:
+#0 [internal function]: MatriculasController->denegar_matricula()
+#1 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#2 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-06 19:26:26 Error: [NotFoundException] Operación no válida
+Request URL: /Matriculas/denegar_matricula?User_id=29&Asignatura_id=8
+Stack Trace:
+#0 /var/www/abp/app/Controller/MatriculasController.php(96): MatriculasController->desmatricularAlumno('8', '29')
+#1 [internal function]: MatriculasController->denegar_matricula()
+#2 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-01-06 19:26:53 Error: [NotFoundException] Petición no válida
+Request URL: /Matriculas/denegar_matricula?User_id=29&Asignatura_id=8
+Stack Trace:
+#0 /var/www/abp/app/Controller/MatriculasController.php(96): MatriculasController->desmatricularAlumno('8', '29')
+#1 [internal function]: MatriculasController->denegar_matricula()
+#2 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-01-06 19:28:26 Error: [NotFoundException] Petición no válida
+Request URL: /Matriculas/denegar_matricula?User_id=29&Asignatura_id=8
+Stack Trace:
+#0 /var/www/abp/app/Controller/MatriculasController.php(96): MatriculasController->desmatricularAlumno('8', '29')
+#1 [internal function]: MatriculasController->denegar_matricula()
+#2 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-01-06 19:28:27 Error: [NotFoundException] Petición no válida
+Request URL: /Matriculas/denegar_matricula?User_id=29&Asignatura_id=8
+Stack Trace:
+#0 /var/www/abp/app/Controller/MatriculasController.php(96): MatriculasController->desmatricularAlumno('8', '29')
+#1 [internal function]: MatriculasController->denegar_matricula()
+#2 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-01-06 19:28:54 Error: [NotFoundException] Petición no válida
+Request URL: /Matriculas/denegar_matricula?User_id=29&Asignatura_id=8
+Stack Trace:
+#0 /var/www/abp/app/Controller/MatriculasController.php(96): MatriculasController->desmatricularAlumno('8', '29')
+#1 [internal function]: MatriculasController->denegar_matricula()
+#2 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-01-06 19:31:47 Error: [MissingViewException] View file "/var/www/abp/app/View/Matriculas/confirmar_matricula.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/abp/app/View/Matriculas/confirmar_matricula.ctp',
+)
+Request URL: /Matriculas/confirmar_matricula/30
+Stack Trace:
+#0 /var/www/abp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/abp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/abp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-06 19:32:51 Error: [MissingViewException] View file "/var/www/abp/app/View/Matriculas/confirmar_matricula.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/abp/app/View/Matriculas/confirmar_matricula.ctp',
+)
+Request URL: /Matriculas/confirmar_matricula/30
+Stack Trace:
+#0 /var/www/abp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/abp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/abp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-06 19:39:54 Error: Fatal Error (1): Call to undefined method MatriculasController::desmatricularAlumno() in [/var/www/abp/app/Controller/MatriculasController.php, line 96]
+2014-01-06 19:39:54 Error: [FatalErrorException] Call to undefined method MatriculasController::desmatricularAlumno()
+Request URL: /Matriculas/desmatricular_alumno?User_id=22&Asignatura_id=9
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/abp/ap...', 96)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/abp/ap...', 96, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/abp/ap...', 96, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-06 19:40:25 Error: Fatal Error (1): Call to undefined method MatriculasController::desmatricularAlumno() in [/var/www/abp/app/Controller/MatriculasController.php, line 96]
+2014-01-06 19:40:25 Error: [FatalErrorException] Call to undefined method MatriculasController::desmatricularAlumno()
+Request URL: /Matriculas/desmatricular_alumno?User_id=22&Asignatura_id=9
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/abp/ap...', 96)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/abp/ap...', 96, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/abp/ap...', 96, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-06 19:40:26 Error: Fatal Error (1): Call to undefined method MatriculasController::desmatricularAlumno() in [/var/www/abp/app/Controller/MatriculasController.php, line 96]
+2014-01-06 19:40:26 Error: [FatalErrorException] Call to undefined method MatriculasController::desmatricularAlumno()
+Request URL: /Matriculas/desmatricular_alumno?User_id=22&Asignatura_id=9
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/abp/ap...', 96)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/abp/ap...', 96, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/abp/ap...', 96, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-06 19:40:40 Error: Fatal Error (1): Call to undefined method MatriculasController::desmatricularAlumno() in [/var/www/abp/app/Controller/MatriculasController.php, line 96]
+2014-01-06 19:40:40 Error: [FatalErrorException] Call to undefined method MatriculasController::desmatricularAlumno()
+Request URL: /Matriculas/desmatricular_alumno?User_id=22&Asignatura_id=9
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/abp/ap...', 96)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/abp/ap...', 96, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/abp/ap...', 96, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-06 19:41:01 Error: Fatal Error (1): Call to undefined method MatriculasController::desmatricularAlumno() in [/var/www/abp/app/Controller/MatriculasController.php, line 96]
+2014-01-06 19:41:01 Error: [FatalErrorException] Call to undefined method MatriculasController::desmatricularAlumno()
+Request URL: /Matriculas/desmatricular_alumno?User_id=22&Asignatura_id=9
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/abp/ap...', 96)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/abp/ap...', 96, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/abp/ap...', 96, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-06 19:41:02 Error: Fatal Error (1): Call to undefined method MatriculasController::desmatricularAlumno() in [/var/www/abp/app/Controller/MatriculasController.php, line 96]
+2014-01-06 19:41:02 Error: [FatalErrorException] Call to undefined method MatriculasController::desmatricularAlumno()
+Request URL: /Matriculas/desmatricular_alumno?User_id=22&Asignatura_id=9
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/abp/ap...', 96)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/abp/ap...', 96, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/abp/ap...', 96, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-06 19:41:03 Error: Fatal Error (1): Call to undefined method MatriculasController::desmatricularAlumno() in [/var/www/abp/app/Controller/MatriculasController.php, line 96]
+2014-01-06 19:41:03 Error: [FatalErrorException] Call to undefined method MatriculasController::desmatricularAlumno()
+Request URL: /Matriculas/desmatricular_alumno?User_id=22&Asignatura_id=9
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/abp/ap...', 96)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/abp/ap...', 96, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/abp/ap...', 96, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-06 19:41:10 Error: Fatal Error (1): Call to undefined method MatriculasController::desmatricularAlumno() in [/var/www/abp/app/Controller/MatriculasController.php, line 96]
+2014-01-06 19:41:10 Error: [FatalErrorException] Call to undefined method MatriculasController::desmatricularAlumno()
+Request URL: /Matriculas/desmatricular_alumno?User_id=22&Asignatura_id=9
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/abp/ap...', 96)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/abp/ap...', 96, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/abp/ap...', 96, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-06 19:41:13 Error: Fatal Error (1): Call to undefined method MatriculasController::desmatricularAlumno() in [/var/www/abp/app/Controller/MatriculasController.php, line 96]
+2014-01-06 19:41:13 Error: [FatalErrorException] Call to undefined method MatriculasController::desmatricularAlumno()
+Request URL: /Matriculas/desmatricular_alumno?User_id=22&Asignatura_id=9
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/abp/ap...', 96)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/abp/ap...', 96, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/abp/ap...', 96, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-06 19:41:17 Error: [NotFoundException] Petición no válida
+Request URL: /Matriculas/desmatricular_alumno
+Stack Trace:
+#0 [internal function]: MatriculasController->desmatricular_alumno()
+#1 /var/www/abp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#2 /var/www/abp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/abp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/abp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-06 19:41:36 Error: Fatal Error (1): Call to undefined method MatriculasController::desmatricularAlumno() in [/var/www/abp/app/Controller/MatriculasController.php, line 96]
+2014-01-06 19:41:36 Error: [FatalErrorException] Call to undefined method MatriculasController::desmatricularAlumno()
+Request URL: /Matriculas/desmatricular_alumno?User_id=22&Asignatura_id=9
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/abp/ap...', 96)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/abp/ap...', 96, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/abp/ap...', 96, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-06 20:13:50 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/var/www/abp/app/Controller/MatriculasController.php, line 11]
+2014-01-06 20:13:50 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /Matriculas/index_alumnos
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/abp/ap...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/abp/ap...', 11, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/abp/ap...', 11, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-06 20:15:48 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/abp/app/Controller/MatriculasController.php, line 9]
+2014-01-06 20:15:48 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /Matriculas/index_alumnos
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/abp/ap...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/abp/ap...', 9, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/abp/ap...', 9, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-06 20:15:52 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/abp/app/Controller/MatriculasController.php, line 9]
+2014-01-06 20:15:52 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /Matriculas/index_alumnos
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/abp/ap...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/abp/ap...', 9, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/abp/ap...', 9, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-06 20:17:04 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/abp/app/Controller/MatriculasController.php, line 9]
+2014-01-06 20:17:04 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /Matriculas/index_alumnos
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/abp/ap...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/abp/ap...', 9, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/abp/ap...', 9, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-06 20:17:33 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/abp/app/Controller/MatriculasController.php, line 9]
+2014-01-06 20:17:33 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /Matriculas/index_alumnos
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/abp/ap...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/abp/ap...', 9, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/abp/ap...', 9, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-06 20:22:58 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/abp/app/Controller/MatriculasController.php, line 9]
+2014-01-06 20:22:58 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /Matriculas/index_alumnos
+Stack Trace:
+#0 /var/www/abp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/abp/ap...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/abp/ap...', 9, Array)
+#2 /var/www/abp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/abp/ap...', 9, Array)
+#3 /var/www/abp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

@@ -15,21 +15,23 @@ foreach($asignaturas as $asignatura){
 		}
 	}
 	if(isset($matriculado)){
-		$estado = ($matriculado)?'Matriculado':'Pendiente';
-		$opcion = 'Desmatricular';
+		$estado = ($matriculado)?'Matriculado':'Pendiente de confirmación';
 	}else{
 		$estado = 'Sin matricular';		
-		$opcion = 'Matricular';
 	}
 	echo 	'<tr>
 					<td><span>'.$asignatura['Asignatura']['name'].'</span></td>
 					<td><span>'.$asignatura['Asignatura']['creditos'].'<span></td>
 					<td><span>'.$estado.'</span></td>
-					<td>
-						<a href="/Matriculas/solicitar_matricula/'.$asignatura['Asignatura']['id'].'">'
-							.$opcion.'
-						</a>
-					</td>
+					<td>';
+						if(isset($matriculado)){
+							echo	'<a href="">Desmatriculación
+										</a>';
+						}else{
+							echo	'<a href="/Matriculas/solicitar_matricula/'.$asignatura['Asignatura']['id'].'">Matricular
+										</a>';
+						}					
+					'</td>
 				</tr>';
 }
 echo '</table>';

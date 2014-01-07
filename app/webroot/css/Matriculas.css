@@ -5,3 +5,10 @@
 	width:auto;
 
 }
+.tableMatricularAlumnos th, .tableMatricularAlumnos td{
+	width:33%;
+	text-align:center;
+}
+#trTituloAsignatura th{
+	text-align:center;
+}

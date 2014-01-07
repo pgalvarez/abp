@@ -13,9 +13,12 @@ echo $this->Form->input('creditos');
 		for ($c=1;$c <=$cols;$c++) { 
 			if(isset($values['col_'.$c][$r])){
 				echo '<td class="tdResp">
-				<input class="chekResp" type="radio" name=data[Asignatura][responsable_id]
-				 value='.$values['col_'.$c][$r]['User']['id'].'> 
-				<span>'.$values['col_'.$c][$r]['User']['first_name'].'</span>
+					<input class="chekResp" type="radio" name=data[Asignatura][responsable_id]
+					 value='.$values['col_'.$c][$r]['User']['id'].'> 
+					<span>'.
+						$values['col_'.$c][$r]['User']['second_name'].',
+					 '.$values['col_'.$c][$r]['User']['first_name'].'
+					</span>
 				</td>';
 			}
 		}

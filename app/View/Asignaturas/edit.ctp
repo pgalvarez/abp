@@ -18,7 +18,10 @@ echo $this->Form->input('creditos');
 				echo '<td class="tdResp">
 				<input class="chekResp" type="radio" name=data[Asignatura][responsable_id]
 				 value='.$values['col_'.$c][$r]['User']['id'].'> 
-				<span>'.$values['col_'.$c][$r]['User']['first_name'].'</span>
+				<span>'
+					.$values['col_'.$c][$r]['User']['second_name'].', '
+					.$values['col_'.$c][$r]['User']['first_name']
+				.'</span>
 				</td>';
 			}
 		}

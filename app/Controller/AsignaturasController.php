@@ -19,25 +19,15 @@ class AsignaturasController extends AppController{
 				'order' => array('User.second_name', 'User.first_name')
 				)
 			);
-			//Una vez obtenidos los datos, los ordenamos alfabéticamente para representarlos en la vista
+			//Una vez obtenidos los datos los procesamos para representarlos en una tabla HTML ordenados alfabéticamente
+			// por columnas y filas (de arriba abajo y derecha a izquierda)
 			$cols = 4; //Número de columnas 
 			$values = array();
 			$numrows = sizeof($result);
 			$rows_per_col = ceil($numrows / $cols);
 			
-			for ($c=1;$c<=$cols;$c++) {
-				$values['col_'.$c] = array();
-			}
-			$c = 1;
-			$r = 1;
-			foreach($result as $row ) {
-				$values['col_'.$c][$r] = $row;
-				if ($r == $rows_per_col) {
-					$c++; $r = 1; 
-				}else { 
-					$r++;
-				}
-			}
+			$values = $this->orderData($cols, $rows_per_col, $result);
+
 			$this->set('cols',$cols);
 			$this->set('rows_per_col',$rows_per_col);
 			$this->set('values',$values);
@@ -72,20 +62,9 @@ class AsignaturasController extends AppController{
 			$values = array();
 			$numrows = sizeof($result);
 			$rows_per_col = ceil($numrows / $cols);
-			
-			for ($c=1;$c<=$cols;$c++) {
-				$values['col_'.$c] = array();
-			}
-			$c = 1;
-			$r = 1;
-			foreach($result as $row ) {
-				$values['col_'.$c][$r] = $row;
-				if ($r == $rows_per_col) {
-					$c++; $r = 1; 
-				}else { 
-					$r++;
-				}
-			}
+	
+			$values = $this->orderData($cols, $rows_per_col, $result);
+
 			$this->set('cols',$cols);
 			$this->set('rows_per_col',$rows_per_col);
 			$this->set('values',$values);
@@ -108,6 +87,24 @@ class AsignaturasController extends AppController{
 	}
 	function matricular(){
 		$this->set('asignaturas', $this->Asignatura->find('all'));
+	}
+
+	function orderData($cols, $rows_per_col, $result){
+		$values = array();
+		for ($c=1;$c<=$cols;$c++) {
+			$values['col_'.$c] = array();
+		}
+		$c = 1;
+		$r = 1;
+		foreach($result as $row ) {
+			$values['col_'.$c][$r] = $row;
+			if ($r == $rows_per_col) {
+				$c++; $r = 1; 
+			}else { 
+				$r++;
+			}
+		}
+		return $values;
 	}
 }
 ?>
