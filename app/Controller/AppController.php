@@ -41,7 +41,7 @@ class AppController extends Controller {
   public $helpers = array('Html', 'Form', 'Session');
 
 	public function beforeFilter() {
-			$this->Auth->allow('login');
+			$this->Auth->allow('login','add');
       $this->Auth->loginAction = array('controller' => 'users', 'action' => 'login');
       $this->Auth->logoutRedirect = array('controller' => 'users', 'action' => 'login');
       $this->Auth->loginRedirect = array('controller' => 'users', 'action' => 'login');	
