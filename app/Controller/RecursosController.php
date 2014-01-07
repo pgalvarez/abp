@@ -7,6 +7,7 @@ class RecursosController extends AppController{
 		if($this->request->isPost()){
 			$this->Recurso->create();
 			if($this->Recurso->save($this->request->data)){
+				$this->Session->setFlash(__('El recurso ha sido dado de alta con éxito.'))
 				return $this->redirect(array('controller' => '', 'action' => 'index'));
 			}
 			$this->Session->setFlash('Error al guardar');
