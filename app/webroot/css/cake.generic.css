@@ -22,12 +22,22 @@
 }
 
 /** General Style Info **/
-body {
-	background: #003d4c;
+body {	
 	color: #fff;
 	font-family:'lucida grande',verdana,helvetica,arial,sans-serif;
 	font-size:90%;
 	margin: 0;
+	background: #4786b3;
+	
+	background: -moz-radial-gradient(center, ellipse cover, #4786b3 0%, #2e5673 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#4786b3), color-stop(100%,#2e5673));
+	background: -webkit-radial-gradient(center, ellipse cover, #4786b3 0%,#2e5673 100%);
+	background: -o-radial-gradient(center, ellipse cover, #4786b3 0%,#2e5673 100%);
+	background: -ms-radial-gradient(center, ellipse cover, #4786b3 0%,#2e5673 100%);
+	background: radial-gradient(center, ellipse cover, #4786b3 0%,#2e5673 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4786b3', endColorstr='#2e5673',GradientType=1 );
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 a {
 	color: #003d4c;
@@ -75,6 +85,8 @@ p {
 /** Layout **/
 #container {
 	text-align: left;
+	width:960px;
+	margin:0 auto;
 }
 
 #header{

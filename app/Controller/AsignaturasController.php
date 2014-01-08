@@ -9,6 +9,7 @@ class AsignaturasController extends AppController{
 		if($this->request->isPost()){
 			$this->Asignatura->create();
 			if($this->Asignatura->save($this->request->data)){
+				$this->Session->setFlash('Asignatura dada de alta con éxito');
 				return $this->redirect(array('controller' => '', 'action' => 'index'));
 			}
 			$this->Session->setFlash('Error al guardar');
@@ -26,11 +27,11 @@ class AsignaturasController extends AppController{
 			$numrows = sizeof($result);
 			$rows_per_col = ceil($numrows / $cols);
 			
-			$values = $this->orderData($cols, $rows_per_col, $result);
+			$profesores = $this->orderData($cols, $rows_per_col, $result);
 
 			$this->set('cols',$cols);
 			$this->set('rows_per_col',$rows_per_col);
-			$this->set('values',$values);
+			$this->set('values',$proferores);
 		}
 	}
 	function edit($id = null){
