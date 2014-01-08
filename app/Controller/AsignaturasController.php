@@ -13,10 +13,10 @@ class AsignaturasController extends AppController{
 				return $this->redirect(array('controller' => '', 'action' => 'index'));
 			}
 			$this->Session->setFlash('Error al guardar');
-		}else{
+		}else{ 
 			$result = $this->User->find('all', array(
 				'fields' => array('User.first_name','User.second_name','User.id'),
-				'conditions'=> array('User.group_id' => '4'),
+				'conditions'=> array('Group.name' => 'Profesor'),
 				'order' => array('User.second_name', 'User.first_name')
 				)
 			);
@@ -31,7 +31,7 @@ class AsignaturasController extends AppController{
 
 			$this->set('cols',$cols);
 			$this->set('rows_per_col',$rows_per_col);
-			$this->set('values',$proferores);
+			$this->set('values',$profesores);
 		}
 	}
 	function edit($id = null){
@@ -51,11 +51,11 @@ class AsignaturasController extends AppController{
         $this->Session->setFlash(__('Error en la actualización.'));
     }
     if (!$this->request->data) {
-        $this->request->data = $asignatura;
+      $this->request->data = $asignatura;
 
-				$result = $this->User->find('all', array(
-				'conditions' => array('User.group_id =' => '4'),
+			$result = $this->User->find('all', array(
 				'fields' => array('User.first_name','User.second_name','User.id'),
+				'conditions'=> array('Group.name' => 'Profesor'),
 				'order' => array('User.second_name', 'User.first_name')
 				)
 			);
@@ -63,7 +63,7 @@ class AsignaturasController extends AppController{
 			$values = array();
 			$numrows = sizeof($result);
 			$rows_per_col = ceil($numrows / $cols);
-	
+
 			$values = $this->orderData($cols, $rows_per_col, $result);
 
 			$this->set('cols',$cols);

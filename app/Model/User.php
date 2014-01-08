@@ -13,7 +13,13 @@ class User extends AppModel{
 			'foreignKey' => 'users_id'		
 		)
 	);
-
+	public $belongsTo = array(
+    'Group' => array(
+        'className' => 'Group',
+				'foreignKey' => 'group_id',
+				'fields' => array('Group.name')
+    )
+  );
 	public $validate = array(
 		'first_name' => array(
 			'alfanumerico' => array(
